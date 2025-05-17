@@ -43,42 +43,33 @@ Returns a list of customer report entries:
     }
   ]
 }
-🛠️ How to Run
-Clone the repository
 
-bash
-Copy
-Edit
+## 🛠️ How to Run
+
+### Clone the repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/customer-data-aggregation-pipeline.git
 cd customer-data-aggregation-pipeline
+
 Create and activate a Python virtual environment
 
-bash
-Copy
-Edit
 python -m venv venv
-source venv/bin/activate    # For Windows: venv\Scripts\activate
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 Install dependencies
 
-nginx
-Copy
-Edit
 pip install -r requirements.txt
-Configure MongoDB URI
-Edit the MongoDB connection string in app/db.py file to connect to your MongoDB instance.
+Configure MongoDB connection
+Edit the MongoDB URI in app/db.py to point to your MongoDB instance.
 
 (Optional) Generate sample data
 
-nginx
-Copy
-Edit
 python seed_data.py
 Start the FastAPI server
 
-css
-Copy
-Edit
 uvicorn main:app --reload
 Explore the API
-Open your browser and visit:
-http://localhost:8000/docs
+Open your browser and navigate to http://localhost:8000/docs to access interactive API documentation.
+
+
+Let me know if you want me to generate the full README with this included!
